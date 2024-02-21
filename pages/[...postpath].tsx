@@ -16,7 +16,7 @@ export default function handler(req, res) {
   const pathArr = ctx.query.postpath as Array<string>;
   const path = pathArr.join("/");
   console.log(path);
-  const fbclid = ctx.query.fbclid;
+  //const fbclid = ctx.query.fbclid;
   console.log(referringURL);
 
   // redirect if facebook is the referer or request contains fbclid
