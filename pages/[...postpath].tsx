@@ -6,7 +6,7 @@ import { GraphQLClient, gql } from "graphql-request";
 
 export default function handler(req, res) {
   const referringURL = req.headers.referer;
-  const { fbclid } = req.query;
+  const fbclid = req.query;
   const actualLink = `https://${req.headers.host}${req.url}`;
   
   const getServerSideProps: GetServerSideProps = async (ctx) => {
